@@ -3,6 +3,7 @@
           Psi4: An Open-Source Ab Initio Electronic Structure Package
                                Psi4 1.9.1 release
 
+                         Git: Rev {} zzzzzzz 
 
 
     D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
@@ -30,11 +31,11 @@
     -----------------------------------------------------------------------
 
 
-    Psi4 started on: Tuesday, 30 April 2024 02:29PM
+    Psi4 started on: Wednesday, 01 May 2024 12:11PM
 
-    Process ID: 34284
-    Host:       PC001.IRVING.UPEI.CA
-    PSIDATADIR: /opt/anaconda3/envs/psi4/share/psi4
+    Process ID: 14224
+    Host:       Barrys-MacBook-Pro.local
+    PSIDATADIR: /Users/blink/psi4conda/share/psi4
     Memory:     953.7 MiB
     Threads:    1
       Threads set to 4 by Python driver.
@@ -42,28 +43,28 @@
 Scratch directory: /tmp/
    => Libint2 <=
 
-    Primary   basis highest AM E, G, H:  6, 6, 3
-    Auxiliary basis highest AM E, G, H:  7, 7, 4
-    Onebody   basis highest AM E, G, H:  -, -, -
+    Primary   basis highest AM E, G, H:  5, 4, 3
+    Auxiliary basis highest AM E, G, H:  6, 5, 4
+    Onebody   basis highest AM E, G, H:  6, 5, 4
     Solid Harmonics ordering:            Gaussian
 
-*** tstart() called on PC001.IRVING.UPEI.CA
-*** at Tue Apr 30 14:30:28 2024
+*** tstart() called on Barrys-MacBook-Pro.local
+*** at Wed May  1 13:57:08 2024
 
    => Loading Basis Set <=
 
     Name: CC-PVDZ
     Role: ORBITAL
     Keyword: BASIS
-    atoms 1   entry O          line   198 file /opt/anaconda3/envs/psi4/share/psi4/basis/cc-pvdz.gbs 
-    atoms 2-3 entry H          line    22 file /opt/anaconda3/envs/psi4/share/psi4/basis/cc-pvdz.gbs 
+    atoms 1   entry O          line   198 file /Users/blink/psi4conda/share/psi4/basis/cc-pvdz.gbs 
+    atoms 2-3 entry H          line    22 file /Users/blink/psi4conda/share/psi4/basis/cc-pvdz.gbs 
 
 
          ---------------------------------------------------------
                                    SCF
                by Justin Turney, Rob Parrish, Andy Simmonett
                           and Daniel G. A. Smith
-                              UHF Reference
+                              RHF Reference
                         4 Threads,    953 MiB Core
          ---------------------------------------------------------
 
@@ -101,7 +102,7 @@ Scratch directory: /tmp/
   Guess Type is SAD.
   Energy threshold   = 1.00e-06
   Density threshold  = 1.00e-06
-  Integral threshold = 1.00e-12
+  Integral threshold = 1.00e-08
 
   ==> Primary Basis <==
 
@@ -127,8 +128,8 @@ Scratch directory: /tmp/
     Name: (CC-PVDZ AUX)
     Role: JKFIT
     Keyword: DF_BASIS_SCF
-    atoms 1   entry O          line   221 file /opt/anaconda3/envs/psi4/share/psi4/basis/cc-pvdz-jkfit.gbs 
-    atoms 2-3 entry H          line    51 file /opt/anaconda3/envs/psi4/share/psi4/basis/cc-pvdz-jkfit.gbs 
+    atoms 1   entry O          line   221 file /Users/blink/psi4conda/share/psi4/basis/cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file /Users/blink/psi4conda/share/psi4/basis/cc-pvdz-jkfit.gbs 
 
   Starting with a DF guess...
 
@@ -145,7 +146,7 @@ Scratch directory: /tmp/
     OpenMP threads:               4
     Memory [MiB]:               715
     Algorithm:                 Core
-    Schwarz Cutoff:           1E-12
+    Schwarz Cutoff:           1E-08
     Mask sparsity (%):       0.0000
     Fitting Condition:        1E-10
 
@@ -188,14 +189,14 @@ Scratch directory: /tmp/
 
                            Total Energy        Delta E     RMS |[F,P]|
 
-   @DF-UHF iter SAD:   -75.49203049694297   -7.54920e+01   0.00000e+00 
-   @DF-UHF iter   1:   -75.95165027023711   -4.59620e-01   1.74113e-02 ADIIS/DIIS
-   @DF-UHF iter   2:   -76.00526451695490   -5.36142e-02   1.01434e-02 ADIIS/DIIS
-   @DF-UHF iter   3:   -76.02509016151537   -1.98256e-02   1.08596e-03 ADIIS/DIIS
-   @DF-UHF iter   4:   -76.02556705307090   -4.76892e-04   2.20709e-04 ADIIS/DIIS
-   @DF-UHF iter   5:   -76.02558871527023   -2.16622e-05   3.99282e-05 DIIS
-   @DF-UHF iter   6:   -76.02558969777816   -9.82508e-07   6.06172e-06 DIIS
-   @DF-UHF iter   7:   -76.02558972212864   -2.43505e-08   7.98511e-07 DIIS
+   @DF-RHF iter SAD:   -75.49203049694252   -7.54920e+01   0.00000e+00 
+   @DF-RHF iter   1:   -75.95165027023651   -4.59620e-01   1.74113e-02 ADIIS/DIIS
+   @DF-RHF iter   2:   -76.00526451695426   -5.36142e-02   1.01434e-02 ADIIS/DIIS
+   @DF-RHF iter   3:   -76.02509016151487   -1.98256e-02   1.08596e-03 ADIIS/DIIS
+   @DF-RHF iter   4:   -76.02556705307019   -4.76892e-04   2.20709e-04 ADIIS/DIIS
+   @DF-RHF iter   5:   -76.02558871526965   -2.16622e-05   3.99282e-05 DIIS
+   @DF-RHF iter   6:   -76.02558969777749   -9.82508e-07   6.06172e-06 DIIS
+   @DF-RHF iter   7:   -76.02558972212802   -2.43505e-08   7.98511e-07 DIIS
 
   DF guess converged.
 
@@ -206,47 +207,26 @@ Scratch directory: /tmp/
     wK tasked:                  No
     Integrals threads:           4
     Screening Type:           CSAM
-    Screening Cutoff:        1E-12
+    Screening Cutoff:        1E-08
     Incremental Fock:           No
 
-   @UHF iter   8:   -76.02561132015774   -7.60256e+01   7.15409e-06 DIIS
-   @UHF iter   9:   -76.02561133330298   -1.31452e-08   1.16164e-06 DIIS
-   @UHF iter  10:   -76.02561133372089   -4.17913e-10   2.50419e-07 DIIS
+   @RHF iter   8:   -76.02561132015745   -7.60256e+01   7.15409e-06 DIIS
+   @RHF iter   9:   -76.02561133330283   -1.31454e-08   1.16164e-06 DIIS
+   @RHF iter  10:   -76.02561133372078   -4.17941e-10   2.50419e-07 DIIS
   Energy and wave function converged.
 
 
   ==> Post-Iterations <==
 
-   @Spin Contamination Metric:  -8.881784197E-16
-   @S^2 Expected:                0.000000000E+00
-   @S^2 Observed:               -8.881784197E-16
-   @S   Expected:                0.000000000E+00
-   @S   Observed:                0.000000000E+00
-
     Orbital Energies [Eh]
     ---------------------
 
-    Alpha Occupied:                                                       
+    Doubly Occupied:                                                      
 
        1A    -20.554067     2A     -1.330341     3A     -0.687982  
        4A     -0.567178     5A     -0.492705  
 
-    Alpha Virtual:                                                        
-
-       6A      0.182614     7A      0.254092     8A      0.772892  
-       9A      0.847483    10A      1.165920    11A      1.199590  
-      12A      1.256122    13A      1.431417    14A      1.477894  
-      15A      1.662640    16A      1.867081    17A      1.927876  
-      18A      2.412840    19A      2.455349    20A      3.280618  
-      21A      3.317599    22A      3.496160    23A      3.837681  
-      24A      4.139144  
-
-    Beta Occupied:                                                        
-
-       1A    -20.554067     2A     -1.330341     3A     -0.687982  
-       4A     -0.567178     5A     -0.492705  
-
-    Beta Virtual:                                                         
+    Virtual:                                                              
 
        6A      0.182614     7A      0.254092     8A      0.772892  
        9A      0.847483    10A      1.165920    11A      1.199590  
@@ -259,28 +239,17 @@ Scratch directory: /tmp/
     Final Occupation by Irrep:
               A 
     DOCC [     5 ]
-    SOCC [     0 ]
     NA   [     5 ]
     NB   [     5 ]
 
-  @UHF Final Energy:   -76.02561133372089
+  @RHF Final Energy:   -76.02561133372078
 
    => Energetics <=
 
     Nuclear Repulsion Energy =              9.0529796441891808
-    One-Electron Energy =                -122.8926377725694579
-    Two-Electron Energy =                  37.8140467946593901
-    Total Energy =                        -76.0256113337208888
-
-  UHF NO Occupations:
-  HONO-2 :    3  A 2.0000000
-  HONO-1 :    4  A 2.0000000
-  HONO-0 :    5  A 2.0000000
-  LUNO+0 :    6  A 0.0000000
-  LUNO+1 :    7  A 0.0000000
-  LUNO+2 :    8  A 0.0000000
-  LUNO+3 :    9  A 0.0000000
-
+    One-Electron Energy =                -122.8926377725700405
+    Two-Electron Energy =                  37.8140467946600936
+    Total Energy =                        -76.0256113337207751
 
 Computation Completed
 
@@ -298,18 +267,18 @@ Properties computed using the SCF density matrix
 
  L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
  Dipole X            :          0.0000000            0.0000000            0.0000000
- Dipole Y            :          0.0000000           -0.0000000            0.0000000
+ Dipole Y            :         -0.0000000           -0.0000000           -0.0000000
  Dipole Z            :          0.1850035           -1.0098369           -0.8248334
  Magnitude           :                                                    0.8248334
 
  ------------------------------------------------------------------------------------
 
-*** tstop() called on PC001.IRVING.UPEI.CA at Tue Apr 30 14:30:29 2024
+*** tstop() called on Barrys-MacBook-Pro.local at Wed May  1 13:57:09 2024
 Module time:
-	user time   =       1.93 seconds =       0.03 minutes
-	system time =       0.17 seconds =       0.00 minutes
+	user time   =       1.92 seconds =       0.03 minutes
+	system time =       0.18 seconds =       0.00 minutes
 	total time  =          1 seconds =       0.02 minutes
 Total time:
-	user time   =       1.93 seconds =       0.03 minutes
-	system time =       0.17 seconds =       0.00 minutes
+	user time   =       1.92 seconds =       0.03 minutes
+	system time =       0.18 seconds =       0.00 minutes
 	total time  =          1 seconds =       0.02 minutes
