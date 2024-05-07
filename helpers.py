@@ -160,7 +160,7 @@ def drawXYZ_labeled(mol):
     view.addModel(mol.save_string_xyz_file(), "xyz")
 
     for i,(x,y,z) in enumerate(mol.to_arrays()[0]*hartree2A):
-        view.addLabel(str(i),{'position':{'x':x,'y':y,'z':z},'inFront':True})
+        view.addLabel(str(i+1),{'position':{'x':x,'y':y,'z':z},'inFront':True})
     view.setStyle({'stick':{}, 'sphere':{'scale':0.1}})
     view.setStyle({'model':0},{'stick':{'colorscheme':'yellowCarbon'}, 'sphere':{'scale':0.1}})
     view.zoomTo()
