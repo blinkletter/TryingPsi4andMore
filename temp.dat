@@ -1,0 +1,32 @@
+    Molecular point group: c2
+    Full point group: C2h
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+    C       
+    C             1         CC1
+    C             2         CC2      1       A_321
+    C             3         CC1      2       A_321      1    dihedral
+    H             1      CH_5_9      2      CH_512      3          D3
+    H             1     CH_6_10      5      CH_615      2          D2
+    H             2      CH_7_8      1      CH_721      3          D1
+    H             3      CH_7_8      4      CH_721      2          D1
+    H             4      CH_5_9      3      CH_512      2          D3
+    H             4     CH_6_10      9      CH_615      3          D2
+
+    A_321     =  124.0397317032
+    CC1       =    1.3133427466
+    CC2       =    1.4893721531
+    CH_512    =  122.0339844465
+    CH_5_9    =    1.0812380249
+    CH_615    =  115.9570008846
+    CH_6_10   =    1.0818205725
+    CH_721    =  120.2523853711
+    CH_7_8    =    1.0845799140
+    D1        = -180.0000000000
+    D2        =  179.9999999999
+    D3        =  180.0000000000
+    dihedral  = -179.9999999999
+
+
+  Memory set to   1.863 GiB by Python driver.
