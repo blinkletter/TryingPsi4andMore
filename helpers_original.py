@@ -106,15 +106,13 @@ def drawXYZGeomSliderMolecularProperty(geom, quantity_array, energies_array, qua
     import matplotlib.pyplot as plt
     def drawXYZGeomNumMolecularProperty(geom, quantity):
         view = py3Dmol.view(width=400, height=400)
-#        i,= np.where(quantity_array==quantity)   # This line resulted in an error
-                                                  # the function returns a tuple of (array, ) with nothing in the second position.
-                                                  # The "i,=" statement must have worked in a previous version of python but not now 
-        i = np.where(quantity_array==quantity)[0]
-#        print(i)
+#        i,= np.where(quantity_array==quantity)
+        i, (x,y,z) = np.where(quantity_array==quantity)
+        print(i)
         view.addModel(geom[int(i)], "xyz")
         view.setStyle({'stick':{}, 'sphere':{'scale':0.1}})
         view.zoomTo()
-        fig, ax = plt.subplots(figsize=(4, 3))
+        fig, ax = plt.subplots()
         ax.plot(quantity_array, energies_array)
         ax.scatter(quantity_array[np.where(quantity_array == quantity, True, False)], energies_array[np.where(quantity_array == quantity, True, False)])
         ax.set_xlabel(quantity_label)
