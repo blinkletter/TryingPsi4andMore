@@ -109,7 +109,7 @@ def drawXYZGeomSliderMolecularProperty(geom, quantity_array, energies_array, qua
 #        i,= np.where(quantity_array==quantity)   # This line resulted in an error
                                                   # the function returns a tuple of (array, ) with nothing in the second position.
                                                   # The "i,=" statement must have worked in a previous version of python but not now 
-        i = np.where(quantity_array==quantity)[0]
+        i = np.where(quantity_array==quantity)[0][0]
 #        print(i)
         view.addModel(geom[int(i)], "xyz")
         view.setStyle({'stick':{}, 'sphere':{'scale':0.1}})
