@@ -182,18 +182,20 @@ def findCubeFiles(wd="./"):
     cubefiles = [cube.replace('Psi_','') for cube in cubefiles]
     cubefiles = [cube.split('-') for cube in cubefiles]
 
+
+    gfgf = 0
     for cube in cubefiles:
+        gfgf = gfgf + 1
+        print(gfgf)
         alpha_or_beta, n1, n2 = cube[0].split('_')
-#        irrep, name = cube[1].replace('.cube', '').split('_')   ### This line caused an error
-        irrep = cube[1].replace('.cube', '')     ### BL Changed because no nbame appended to file names
-        name = str(n1)                           ### Name will now be the orbital number
+        print(alpha_or_beta, n1, n2)
+        print(cube[1])
+        irrep, name = cube[1].replace('.cube', '').split('_')
         if name in orbitals:
             orbitals[name].append((alpha_or_beta, n1, n2, irrep))
         else:
             orbitals[name] =[(alpha_or_beta, n1, n2, irrep)]
-    sorted_orbs = dict(sorted(orbitals.items()))     ### BL Added a sort
-#    return orbitals
-    return sorted_orbs     ### BL wanted sorted list of orbitals
+    return orbitals
 
 import ipywidgets
 from ipywidgets import interact, interactive, fixed, widgets
@@ -207,20 +209,8 @@ def draw_orbital(mol, orbitals, orbital, wd):
     colours = ['red', 'blue']
 
     for i,orb in enumerate(orbitals[orbital]):
-
-### BL There was an inconsistency with how filenames were handles. I deleted the '/' after the wroking directory 
-###    string (wd) to correct the filename that is assembled by this command
-#        orb_file = open(f"{wd}/Psi_{orb[0]}_{orb[1]}_{orb[2]}-{orb[3]}_{orbital}.cube", "r").read()
-        
-        orb_file = open(f"{wd}Psi_{orb[0]}_{orb[1]}_{orb[2]}-{orb[3]}.cube", "r").read()
-
-### BL The 'isoval' setting was set to only a negative value. It must be positive for one lobe and negative
-###    for the other in an orbital. I made a change so that the two cube files would be combined with
-###    opposite signs.
-#        view.addVolumetricData(orb_file, "cube", {'isoval': -0.02, 'color': colours[i], 'opacity': 0.75})
-        
-        signs = [-1,1]
-        view.addVolumetricData(orb_file, "cube", {'isoval': (signs[i]*0.02), 'color': colours[i], 'opacity': 0.75})
+        orb_file = open(f"{wd}/Psi_{orb[0]}_{orb[1]}_{orb[2]}-{orb[3]}_{orbital}.cube", "r").read()
+        view.addVolumetricData(orb_file, "cube", {'isoval': -0.02, 'color': colours[i], 'opacity': 0.75})
 
     view.zoomTo()
     return(view.show())
@@ -232,11 +222,11 @@ def show_orbitals(wd="./", mol=None):
     orbitals =  findCubeFiles(wd)
     _ = interact(draw_orbital, mol=fixed(mol),wd=fixed(wd), orbitals=fixed(orbitals), orbital = widgets.Dropdown(
     options=orbitals.keys(),
-#    value='SOMO',                    ### BL deleted - no orbitals was names 'SOMO'
-    value=list(orbitals.keys())[0],   ### BL changed to make value the first orbital name in the orbitals dict
+    value='SOMO',
     description='Orbital:',
     disabled=False,
 ))
+
 
 def drawXYZSideBySide(mol1, mol2):
     view = py3Dmol.view(viewergrid=(1,2))
