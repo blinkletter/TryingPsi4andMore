@@ -1,0 +1,7 @@
+
+  Memory set to   3.725 GiB by Python driver.
+start
+Warning: thermodynamics relations excluded imaginary frequencies: ['732.0994i']
+Warning: used thermodynamics relations inappropriate for low-frequency modes: ['472.1934']
+Warning: thermodynamics relations excluded imaginary frequencies: ['722.8595i']
+Warning: used thermodynamics relations inappropriate for low-frequency modes: ['474.8976']

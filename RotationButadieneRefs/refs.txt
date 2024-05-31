@@ -41,3 +41,5 @@ Structure of transition states in organic reactions. General theory and an appli
 James W. McIver Jr. and Andrew Komornicki
 Journal of the American Chemical Society 1972 94 (8), 2625-2633
 DOI: 10.1021/ja00763a011
+
+https://chemtools.readthedocs.io/en/latest/notebooks/GamessUS_tutorial.html
