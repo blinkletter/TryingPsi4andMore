@@ -43,3 +43,7 @@ Journal of the American Chemical Society 1972 94 (8), 2625-2633
 DOI: 10.1021/ja00763a011
 
 https://chemtools.readthedocs.io/en/latest/notebooks/GamessUS_tutorial.html
+
+
+https://github.com/pablo-arantes/making-it-rain
+
