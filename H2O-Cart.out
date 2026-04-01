@@ -1,0 +1,297 @@
+    Molecular point group: c2v
+    Full point group: C2v
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O            0.000000000000     0.000000000000    -0.078340411302    15.994914619570
+         H            0.000000000000    -0.700000000000     0.621659588698     1.007825032230
+         H           -0.000000000000     0.700000000000     0.621659588698     1.007825032230
+
+        Interatomic Distances (Angstroms)
+
+        Distance 1 to 2 0.990   
+        Distance 1 to 3 0.990   
+        Distance 2 to 3 1.400   
+
+
+        Bond Angles (degrees)
+
+        Angle 2-1-3:   90.000
+        Angle 1-2-3:   45.000
+        Angle 1-3-2:   45.000
+
+
+    Molecular point group: c2v
+    Full point group: C2v
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+    O            0.000000000000     0.000000000000    -0.078340411302
+    H                         x                  y     0.621659588698
+    H                         x                 -y     0.621659588698
+
+    x         =   -0.0000000000
+    y         =   -0.7000000000
+
+    Molecular point group: c2v
+    Full point group: C2v
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O            0.000000000000     0.000000000000    -0.078340411302    15.994914619570
+         H            0.000000000000    -0.700000000000     0.621659588698     1.007825032230
+         H           -0.000000000000     0.700000000000     0.621659588698     1.007825032230
+
+
+Scratch directory: /Users/blink/PSI4_SCRATCH/
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  7, 6, 3
+    Auxiliary basis highest AM E, G, H:  7, 7, 4
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on Barrys-MacBook-Pro.local
+*** at Mon Mar 30 18:49:23 2026
+
+   => Loading Basis Set <=
+
+    Name: CC-PVDZ
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   198 file /opt/anaconda3/envs/compchempsi4/share/psi4/basis/cc-pvdz.gbs 
+    atoms 2-3 entry H          line    22 file /opt/anaconda3/envs/compchempsi4/share/psi4/basis/cc-pvdz.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        4 Threads,    953 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c2v
+    Full point group: C2v
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O            0.000000000000    -0.000000000000    -0.078340411302    15.994914619570
+         H            0.000000000000    -0.700000000000     0.621659588698     1.007825032230
+         H           -0.000000000000     0.700000000000     0.621659588698     1.007825032230
+
+  Running in c2v symmetry.
+
+  Rotational constants: A =     19.21900  B =     17.06810  C =      9.03990 [cm^-1]
+  Rotational constants: A = 576170.98718  B = 511688.88416  C = 271009.43539 [MHz]
+  Nuclear repulsion =    8.930779015944612
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 10
+  Nalpha       = 5
+  Nbeta        = 5
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is DF.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-06
+  Density threshold  = 1.00e-06
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: CC-PVDZ
+    Blend: CC-PVDZ
+    Number of shells: 12
+    Number of basis functions: 24
+    Number of Cartesian functions: 25
+    Spherical Harmonics?: true
+    Max angular momentum: 2
+
+   => Loading Basis Set <=
+
+    Name: (CC-PVDZ AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1   entry O          line   221 file /opt/anaconda3/envs/compchempsi4/share/psi4/basis/cc-pvdz-jkfit.gbs 
+    atoms 2-3 entry H          line    51 file /opt/anaconda3/envs/compchempsi4/share/psi4/basis/cc-pvdz-jkfit.gbs 
+
+  ==> Integral Setup <==
+
+  DFHelper Memory: AOs need 0.001 GiB; user supplied 0.698 GiB. 
+  SCF_SUBTYPE=INCORE selected. In-core MEM_DF algorithm will be used.
+  Using in-core AOs.
+
+  ==> MemDFJK: Density-Fitted J/K Matrices <==
+
+    J tasked:                   Yes
+    K tasked:                   Yes
+    wK tasked:                   No
+    OpenMP threads:               4
+    Memory [MiB]:               715
+    Algorithm:                 Core
+    Schwarz Cutoff:           1E-12
+    Mask sparsity (%):       0.0000
+    Fitting Condition:        1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (CC-PVDZ AUX)
+    Blend: CC-PVDZ-JKFIT
+    Number of shells: 42
+    Number of basis functions: 116
+    Number of Cartesian functions: 131
+    Spherical Harmonics?: true
+    Max angular momentum: 3
+
+  Minimum eigenvalue in the overlap matrix is 3.3229533195E-02.
+  Reciprocal condition number of the overlap matrix is 1.0595520796E-02.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A1        11      11 
+     A2         2       2 
+     B1         4       4 
+     B2         7       7 
+   -------------------------
+    Total      24      24
+   -------------------------
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:   -76.43946752479724   -7.64395e+01   0.00000e+00 
+   @DF-RHF iter   1:   -75.91646275683929    5.23005e-01   3.32980e-02 DIIS/ADIIS
+   @DF-RHF iter   2:   -76.00361093422484   -8.71482e-02   1.47368e-02 DIIS/ADIIS
+   @DF-RHF iter   3:   -76.01721150531770   -1.36006e-02   3.76068e-03 DIIS/ADIIS
+   @DF-RHF iter   4:   -76.01824254987002   -1.03104e-03   5.31737e-04 DIIS/ADIIS
+   @DF-RHF iter   5:   -76.01828173355133   -3.91837e-05   1.06193e-04 DIIS/ADIIS
+   @DF-RHF iter   6:   -76.01828360583166   -1.87228e-06   1.83601e-05 DIIS
+   @DF-RHF iter   7:   -76.01828369396378   -8.81321e-08   2.88567e-06 DIIS
+   @DF-RHF iter   8:   -76.01828369609723   -2.13345e-09   6.04102e-07 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A1   -20.563496     2A1    -1.332326     1B2    -0.653789  
+       3A1    -0.590249     1B1    -0.496145  
+
+    Virtual:                                                              
+
+       4A1     0.176136     2B2     0.252019     3B2     0.728877  
+       5A1     0.875451     6A1     1.189195     2B1     1.195160  
+       4B2     1.271465     7A1     1.306739     1A2     1.523568  
+       3B1     1.584228     8A1     1.850576     5B2     1.982176  
+       6B2     2.375577     9A1     2.442215     2A2     3.257638  
+       4B1     3.317919    10A1     3.424144    11A1     3.806846  
+       7B2     4.162007  
+
+    Final Occupation by Irrep:
+             A1    A2    B1    B2 
+    DOCC [     3,    0,    1,    1 ]
+    NA   [     3,    0,    1,    1 ]
+    NB   [     3,    0,    1,    1 ]
+
+  @DF-RHF Final Energy:   -76.01828369609723
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              8.9307790159446121
+    One-Electron Energy =                -122.6261247970535635
+    Two-Electron Energy =                  37.6770620850117197
+    Total Energy =                        -76.0182836960972281
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :          0.0000000            0.0000000            0.0000000
+ Dipole Z            :         -0.2624340            1.1651974            0.9027634
+ Magnitude           :                                                    0.9027634
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on Barrys-MacBook-Pro.local at Mon Mar 30 18:49:24 2026
+Module time:
+	user time   =       1.57 seconds =       0.03 minutes
+	system time =       0.10 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =      18.47 seconds =       0.31 minutes
+	system time =       1.60 seconds =       0.03 minutes
+	total time  =        118 seconds =       1.97 minutes
+    Molecular point group: c2v
+    Full point group: C2v
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O            0.000000000000    -0.000000000000    -0.078340411302    15.994914619570
+         H            0.000000000000    -0.700000000000     0.621659588698     1.007825032230
+         H           -0.000000000000     0.700000000000     0.621659588698     1.007825032230
+
+        Interatomic Distances (Angstroms)
+
+        Distance 1 to 2 0.990   
+        Distance 1 to 3 0.990   
+        Distance 2 to 3 1.400   
+
+
+        Bond Angles (degrees)
+
+        Angle 2-1-3:   90.000
+        Angle 1-2-3:   45.000
+        Angle 1-3-2:   45.000
+
+
+    Molecular point group: c2v
+    Full point group: C2v
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+    O            0.000000000000    -0.000000000000    -0.078340411302
+    H                         x                  y     0.621659588698
+    H                         x                 -y     0.621659588698
+
+    x         =   -0.0000000000
+    y         =   -0.7000000000
+
